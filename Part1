@@ -1,7 +1,7 @@
 #include <msp430.h>
 int main(void)
 {
-    WDTCTL = WDT_ADLY_1000;                      // WDT 1000ms, SMCLK, interval timer
+    WDTCTL = WDT_ADLY_250;                      // WDT 250ms, SMCLK, interval timer
     P6OUT &= ~BIT6;                              // Changed to Bit 6 for green
     P6DIR |= BIT6;                               // Changed to Bit 6 for green
     PM5CTL0 &= ~LOCKLPM5;
